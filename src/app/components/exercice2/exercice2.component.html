@@ -1,0 +1,4 @@
+<app-header [title]="'Exercice 2'"></app-header>
+<div class="carousel" *ngFor="let film of data">
+  <img class="carousel-item"  src='https://image.tmdb.org/t/p/w600_and_h900_bestv2{{film.poster_path}}' />
+</div>

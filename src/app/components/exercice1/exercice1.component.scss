@@ -1,0 +1,46 @@
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:700);
+
+h1 {
+  font-family: 'Raleway';
+  text-align: center;
+  margin-top: 50px;
+}
+
+#clock {
+  position: relative;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg);
+  width: 300px;
+  height: 300px;
+  background: #000 url(horloge.png) no-repeat center;
+  background-color: rgba(11, 16, 22, 0.726);
+  background-size: 300px;
+  border-radius: 50%;
+  #secondes, #minutes, #heures {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+  #secondes {
+    width: 2px;
+    height: 140px;
+    transform-origin: 50% 0;
+    background-color: rgb(107, 14, 14);
+  }
+  #minutes {
+    width: 4px;
+    height: 100px;
+    border-radius: 10px;
+    background-color:  rgb(203, 207, 212);
+    transform-origin: 50% 0;
+  }
+  #heures {
+    width: 5px;
+    height: 80px;
+    border-radius: 5px;
+    background-color:  rgb(203, 207, 212);
+    transform-origin: 50% 0;
+  }
+}

@@ -1,0 +1,9 @@
+<h1>Angular TP</h1>
+
+<ul class="menu">
+    <li><button (click)="setExample(1)">Exercice 1</button></li>
+    <li><button (click)="setExample(2)">Exercice 2</button></li>
+</ul>
+
+<app-exercice1 *ngIf="currentExample===1"></app-exercice1>
+<app-exercice2 *ngIf="currentExample===2"></app-exercice2>
