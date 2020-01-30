@@ -3,7 +3,7 @@
 <div class="carousel" >
     <a class="carousel-item" *ngFor="let film of data;let i = index; let last = last">
   <img  src='https://image.tmdb.org/t/p/w600_and_h900_bestv2{{film.poster_path}}'  />
-  <h3>{{film.title}}</h3>
+  <h5>{{film.title}}</h5>
   <ng-container *ngIf="last">{{initCarousel()}}</ng-container>
 </a>
 </div>
