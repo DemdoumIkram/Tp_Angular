@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as M from '/home/ikram/Documents/M2/Mpdl/TP/TpAngular/src/assets/materialize/js/materialize.min.js'
-import { MoviesService } from 'src/app/services/movies/movies.service';
+import * as M from '../../../assets/materialize/js/materialize.min.js'
+import { MoviesService } from '../../services/movies/movies.service';
 
 @Component({
   selector: 'app-exercice2',
