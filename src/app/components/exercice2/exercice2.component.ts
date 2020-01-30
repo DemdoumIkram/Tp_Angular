@@ -1,8 +1,6 @@
 import { Component, OnInit ,AfterViewInit } from '@angular/core';
 import * as M from '../../../assets/materialize/js/materialize.min.js'
 import { MoviesService } from '../../services/movies/movies.service';
-import { Observable, of } from 'rxjs';
-import { delay } from 'rxjs/operators';
 
 @Component({
   selector: 'app-exercice2',
@@ -13,7 +11,7 @@ export class Exercice2Component implements OnInit  {
 
 
   data: any;
-  options : { fullWidth: false };
+  hrefs = ['one', 'two', 'three', 'four', 'five'];
 
   constructor(private $ser: MoviesService) { }
 
@@ -22,16 +20,16 @@ export class Exercice2Component implements OnInit  {
       s => this.data = s.results,
       error => alert('error !!')
     );
-  }
-
-  initCarousel() {
-    // timeout needed, otherwise navigation won't work.
     setTimeout(() => {
-       let elems = document.querySelectorAll('.carousel');
-       let instances = M.Carousel.init(elems, this.options);
-    }, 100);
+      let elems = document.querySelectorAll('.carousel');
+      let instances = M.Carousel.init(elems,{});
+   }, 100);
   }
 
+
+
+
+}
 
 
 
