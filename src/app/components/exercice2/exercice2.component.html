@@ -1,9 +1,8 @@
 <app-header [title]="'Exercice 2'"></app-header>
-<h1>derniers films du Box Office</h1>
+
 <div class="carousel" >
-    <a class="carousel-item" *ngFor="let film of data;let i = index; let last = last">
+    <a class="carousel-item" *ngFor="let film of data">
   <img  src='https://image.tmdb.org/t/p/w600_and_h900_bestv2{{film.poster_path}}'  />
   <p>{{film.title}}</p>
-  <ng-container *ngIf="last">{{initCarousel()}}</ng-container>
 </a>
 </div>
