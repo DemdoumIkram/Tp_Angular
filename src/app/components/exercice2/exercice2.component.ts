@@ -22,7 +22,7 @@ export class Exercice2Component implements OnInit  {
     );
     setTimeout(() => {
       let elems = document.querySelectorAll('.carousel');
-      let instances = M.Carousel.init(elems,{});
+      let instances = M.Carousel.init(elems,{numVisible:9 , dist:-25});
    }, 100);
   }
 
